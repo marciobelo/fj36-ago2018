@@ -19,7 +19,7 @@ public class TesteRoteamento
 			public void configure() throws Exception 
 			{
 				errorHandler(
-						deadLetterChannel("file:saida")
+						deadLetterChannel("file:falha")
 						.useOriginalMessage()
 						);
 				
